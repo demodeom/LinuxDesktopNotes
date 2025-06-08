@@ -8,4 +8,5 @@
 
     <toc-element topic="Default-topic.md"/>
     <toc-element topic="Scrcpy.md"/>
+    <toc-element topic="JetBrainsIDEs.md"/>
 </instance-profile>
