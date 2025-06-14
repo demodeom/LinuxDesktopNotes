@@ -20,6 +20,9 @@ sudo mv icon.ico /opt/scrcpy/
 tar -xvf scrcpy-linux-x86_64-v3.2.tar.gz && rm scrcpy-linux-x86_64-v3.2.tar.gz
 
 sudo mv scrcpy-linux-x86_64-v3.2 /opt/scrcpy
+
+# 修改图标文件权限
+chmod 777 /opt/scrcpy/icon.png
 ```
 
 ## Create Desktop Icon
@@ -40,7 +43,7 @@ Type=Application
 Name=Scrcpy
 Comment=Android screen mirroring
 Exec=/opt/scrcpy/scrcpy
-Icon=/opt/scrcpy/icon.ico
+Icon=/opt/scrcpy/icon.png
 Terminal=false
 Categories=Utility;
 ```
@@ -57,6 +60,9 @@ tar -xvf scrcpy-linux-x86_64-v3.2.tar.gz && rm scrcpy-linux-x86_64-v3.2.tar.gz
 
 # 将软件安装到 /opt 目录
 sudo mv scrcpy-linux-x86_64-v3.2 /opt/scrcpy
+
+# 修改图标文件权限
+chmod 777 /opt/scrcpy/icon.png
 
 # 创建快捷方式
 vim ~/.local/share/applications/scrcpy.desktop
